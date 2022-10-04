@@ -1,0 +1,471 @@
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+
+
+
+
+
+
+
+
+  /*  Contenedor loguin  */
+
+
+   
+
+    @media screen and (max-width:768px){
+        .body-loguin{
+            background-image:linear-gradient(
+                rgba(252, 252, 252, 0.5),
+                rgba(247, 246, 246, 0.5)
+              ), url('img/palacio-municipal-culiacan.jpeg');
+        }
+    }
+
+
+  .contenedor-loguin{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px;
+    
+    
+
+  }
+
+  @media screen and (min-width:768px){
+     .contenedor-loguin{
+        display: none;
+     }
+  }
+
+  .contenedor-formulario{
+    
+    max-width: 80%;
+    width: 80%;
+    margin: 0px auto;
+    background-color: #fff;
+    height: 1300px;
+    border-radius: 10px;
+    margin-top: 50px;
+    
+    
+    
+     
+  }
+
+
+
+   .encabezado-formulario{
+    padding: 20px 0px;
+    background-image: url('./img/puente\ .png');
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+   
+  .encabezado-formulario img{
+    
+      width: 70%;
+      max-width: 70%;
+      height: 120px;
+    
+  }
+
+ 
+
+
+
+  .contenido-encabezado{
+    width: 90%;
+    margin: 0px auto;
+    border-radius: 10px 10px 0px 0px; 
+    color: #FFF;
+    text-transform: uppercase;
+    height: 30%;
+    min-height: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  .contenido-encabezado h3 {
+    position: relative;
+    left: 3%;
+    right: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    width: 90%;
+    
+    
+  }
+
+  .contenido-encabezado img{
+    width: 120px;
+    height: 120px;
+    position: relative;
+    top: 60px;
+    
+  }
+
+
+  .formulario{
+    background-color: #fff;
+    height: 70%;
+    border-radius: 0px 0px 10px 10px;
+    min-height: 70%;
+  }
+
+  .form{
+    width: 90%;
+    margin: 0px auto;
+
+  }
+
+  .subtitulos{
+    font-weight: 300;
+    color: #003334;
+  }
+
+  hr{
+    border-width: 10px;
+    color: #003334;
+  }
+
+  .btnEnviar{
+    width: 100%;
+    background-color: #003334;
+    color: #fff;
+    padding: 10px 0px;
+    border-radius: 3px;
+    border: 1px solid #003334;
+  }
+
+  .content-mapa{
+    width: 100%;
+    margin: 0px auto;
+    height: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 10px;
+    
+  }
+
+  .subtitulos-mapa{
+      font-size: 16px;
+      position: relative;
+     font-weight: 300;
+     color: #003334;
+      top: 4px;
+      left: 1%;
+  }
+  
+
+/*  contenedor desktop   */
+
+
+.contenedor-desktop{
+    display: none;
+}
+
+@media screen and (min-width:768px) {
+    .contenedor-desktop{
+        display: flex;
+        width: 100%;
+        height: 90px;
+        background-color: #003334;
+        border-bottom: 3px solid #ddca93;
+
+    }
+
+
+    .contenedor-desktop .row {
+        width: 90%;
+        margin: 0px auto;
+        height: inherit;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .contenedor-desktop .row .logo-desktop{
+        width: 100px;
+        height: inherit;
+        width: 50%;
+    }
+    
+    .contenedor-desktop .row .logo-desktop img{
+        width: 150px;
+        height: 70px;
+    }
+
+    .contenedor-desktop .row .anuncio-header{
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .contenedor-desktop .row .anuncio-header h2{
+          font-size: 24px;
+          color: #fff;
+          font-weight: 700;
+          position: relative;
+          top: 5px;
+    }
+
+
+
+}
+    
+    
+
+
+.contenido-desktop{
+    display: none;
+}
+
+@media screen and (min-width:768px){
+    .contenido-desktop {
+        display: flex;
+        background-image: url('img/puente\ .png');
+        width: 100%;
+        height: 600px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+
+    
+    
+}
+
+
+/* pagina gracias movil   */
+.contenedor-gracias{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(
+        rgba(252, 252, 252, 0.5),
+        rgba(247, 246, 246, 0.5)
+      ),url('img/palacio-municipal-culiacan.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.contenedor-gracias .row{
+    padding-top: 50px;
+    background-color: #fff;
+    width: 90%;
+    margin: 0px auto;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    max-width: 600px;
+    padding-bottom: 50px;
+}
+
+.contenedor-gracias .row .logo-gracias{
+    width: 220px;
+    height: 80px;
+}
+
+.texto-gracias{
+    font-size: 28px;
+    color: #003334 !important;
+
+}
+
+.contenedor-gracias .row .palomita{
+    width: 130px;
+    height: 100px;
+}
+
+.contenedor-gracias .row .folio{
+    text-align: center;
+    font-size: 22px;
+    color: #003334;
+}
+
+.contenedor-gracias .row .folio span{
+    font-size: 24px;
+    font-weight: 600;
+    color: #003334;
+}
+
+.contenedor-gracias .row a  {
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.contenedor-gracias .row a p{
+    font-size: 18px;
+    color: #003334;
+    text-decoration: underline #003334;
+    text-underline-position: under ;
+  
+}
+
+.finalizar {
+    width: 80%;
+    max-width: 250px;
+    margin: 0px auto;
+    padding: 10px 0px;
+    background-color: #003334;
+    color: #FFF;
+    text-decoration: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+
+/*  loguin reporte sistema */
+
+
+.contendor-loguin-sistema{
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
+    
+}
+
+.contendor-loguin-sistema .row{
+    width: 90%;
+    margin: 0px auto;
+    height: 900px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    max-width: 900px;
+    padding-bottom: 50px;
+    
+
+}
+
+.sitema-loguin-encabezado {
+    border-radius: 10px 10px 0px 0px;
+    background-image: url('img/puente\ .png');
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 10px 10px 0px 0px;
+    -moz-border-radius: 10px 10px 0px 0px;
+    -ms-border-radius: 10px 10px 0px 0px;
+    -o-border-radius: 10px 10px 0px 0px;
+}
+
+.sitema-loguin-encabezado h2{
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 45px;
+    position: relative;
+    top: 100px;
+}
+
+.contenedor-logo-ayuntamiento{
+    width: 140px;
+    height: 140px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: relative;
+    top: 140px;
+    
+}
+
+.logo-original{
+    width: 80px;
+    height: 130px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+
+
+.btnSistema{
+    width: 90%;
+    margin: 0px auto;
+    border-radius: 15px;
+    background-color: #003334;
+    padding: 10px 0px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    color: #fff;
+}
+
+.contenedor-logo-verde{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-verde-loguin{
+    width: 200px;
+    height: 100px;
+}
